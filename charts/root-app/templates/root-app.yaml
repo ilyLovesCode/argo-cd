@@ -7,8 +7,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ilyLovesCode/argo-cd.git
-    path: charts/Project1/Applications
+    repoURL: https://github.com/arthurk/argocd-example-install.git
+    path: charts/root-app/
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc

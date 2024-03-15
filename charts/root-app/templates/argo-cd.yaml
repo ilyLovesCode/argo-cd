@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app2
+  name: argo-cd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/ilyLovesCode/argo-cd.git
-    path: charts/Project2/Applications
+    repoURL: https://github.com/arthurk/argocd-example-install.git
+    path: charts/argo-cd
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
