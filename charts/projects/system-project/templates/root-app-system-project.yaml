@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:ilyLovesCode/argo-cd.git
-    path: c
+    path: charts/projects/system-project/
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
