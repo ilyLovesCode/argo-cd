@@ -12,6 +12,6 @@ spec:
     directory:
       recurse: true
       include: '{project.yaml, cluster.yaml}'
-    path: is02/
+    path: is02
     repoURL: git@github.com:ilyLovesCode/argo-cd.git
     targetRevision: HEAD
