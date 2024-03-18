@@ -9,6 +9,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:ilyLovesCode/argo-cd.git
+    path: ./
     targetRevision: HEAD
     directory:
       recurse: true
