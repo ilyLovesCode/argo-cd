@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/secret-type: cluster
 type: Opaque
 stringData:
-  name: returns
+  name: hello
   server: https://192.168.3.2:6443
   config: |
     {
