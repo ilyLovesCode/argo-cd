@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: project1-settings
+  name: system-project-settings
   namespace: argo-cd
 spec:
   destination:
@@ -12,6 +12,6 @@ spec:
     directory:
       recurse: true
       include: 'project.yaml'
-    path: charts/projects/project1/
+    path: is01/system-project/
     repoURL: git@github.com:ilyLovesCode/argo-cd.git
     targetRevision: HEAD
