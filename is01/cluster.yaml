@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: argocd-cluster-HELLO
+  namespace: argo-cd
+  labels:
+    argocd.argoproj.io/secret-type: cluster
+type: Opaque
+stringData:
+  name: returns
+  server: https://192.168.3.2:6443
+  config: |
+    {
+      "existingKubeconfigSecret": "mycluster-kubeconfig"
+    }
